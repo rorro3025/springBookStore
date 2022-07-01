@@ -9,5 +9,5 @@ import java.util.List;
 @CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/api/people")
-public class PeopleController extends BaseControllerImpl<Person,PersonServiceImp>{
+public class PeopleController extends BaseControllerImp<Person,PersonServiceImp>{
 }
