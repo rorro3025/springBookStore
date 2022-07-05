@@ -28,6 +28,11 @@ public class PeopleController {
         return personService.findById(id);
     }
 
+    @GetMapping("/search")
+    public List<Person> search(@RequestParam String name) throws Exception{
+        return personService.search(name);
+    }
+
     @PostMapping("")
     public Person create(@RequestBody Person person) throws Exception{
         return personService.save(person);
